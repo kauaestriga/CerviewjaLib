@@ -9,9 +9,9 @@ class CustomDialog(
 
     fun showError(message: String?) {
         val errorDialog = AlertDialog.Builder(context)
-        errorDialog.setTitle(R.string.ops)
+        errorDialog.setTitle("Ops...")
         errorDialog.setMessage(message)
-        errorDialog.setNeutralButton(R.string.got_it_error) { dialog, _ -> dialog.dismiss() }
+        errorDialog.setNeutralButton("Entendi") { dialog, _ -> dialog.dismiss() }
         errorDialog.show()
     }
 
@@ -21,9 +21,9 @@ class CustomDialog(
 
     fun showMessage(message: String?) {
         val errorDialog = AlertDialog.Builder(context)
-        errorDialog.setTitle(R.string.iupi)
+        errorDialog.setTitle("Oba!!")
         errorDialog.setMessage(message)
-        errorDialog.setPositiveButton(R.string.got_it_happy) { dialog, _ -> dialog.dismiss() }
+        errorDialog.setPositiveButton("Tá bom!") { dialog, _ -> dialog.dismiss() }
         errorDialog.show()
     }
 
